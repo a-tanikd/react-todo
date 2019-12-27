@@ -1,5 +1,6 @@
 import { Paper, List } from '@material-ui/core'
 import React from 'react'
+import PropTypes from 'prop-types'
 import Todo from './Todo'
 
 function TodoList (props) {
@@ -22,6 +23,12 @@ function TodoList (props) {
       )}
     </>
   )
+}
+
+TodoList.propTypes = {
+  items: PropTypes.array.isRequired,
+  onItemRemove: PropTypes.func.isRequired,
+  onItemClick: PropTypes.func.isRequired
 }
 
 export default TodoList

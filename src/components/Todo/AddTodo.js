@@ -1,5 +1,6 @@
 import { Button, Grid, Paper, TextField } from '@material-ui/core'
 import React from 'react'
+import PropTypes from 'prop-types'
 
 function AddTodo (props) {
   return (
@@ -22,6 +23,13 @@ function AddTodo (props) {
       </Grid>
     </Paper>
   )
+}
+
+AddTodo.propTypes = {
+  inputValue: PropTypes.string.isRequired,
+  onInputChange: PropTypes.func.isRequired,
+  onInputKeyPress: PropTypes.func.isRequired,
+  onButtonClick: PropTypes.func.isRequired
 }
 
 export default AddTodo
