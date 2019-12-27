@@ -15,7 +15,7 @@ function AddTodo (props) {
           />
         </Grid>
         <Grid xs={2} md={1} item>
-          <Button fullWidth color="primary" variant="raised" onClick={props.onButtonClick}>
+          <Button fullWidth color="primary" variant="text" onClick={props.onButtonClick}>
             Add
           </Button>
         </Grid>

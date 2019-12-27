@@ -8,7 +8,7 @@ function Todo (props) {
       <Checkbox onClick={props.onCheckBoxToggle} checked={props.checked} disableRipple />
       <ListItemText primary={props.text} />
       <ListItemSecondaryAction>
-        <IconButton aria-label="Delete Todo" onClick={props.onButonClick}>
+        <IconButton aria-label="Delete Todo" onClick={props.onButtonClick}>
           <Delete />
         </IconButton>
       </ListItemSecondaryAction>

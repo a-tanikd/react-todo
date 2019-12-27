@@ -13,8 +13,8 @@ function TodoList (props) {
                 {...todo}
                 key={`TodoItem.${index}`}
                 divider={index !== props.items.length - 1}
-                onButtonClick={props.onItemRemove.bind(index)}
-                onCheckBoxToggle={props.onItemCheck.bind(index)}
+                onButtonClick={() => props.onItemRemove(index)}
+                onCheckBoxToggle={() => props.onItemClick(index)}
               />
             ))}
           </List>
