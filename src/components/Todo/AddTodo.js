@@ -1,7 +1,7 @@
-import { Button, Grid, Paper, TextField } from '@material-ui/core';
-import React from 'react';
+import { Button, Grid, Paper, TextField } from '@material-ui/core'
+import React from 'react'
 
-function AddTodo(props) {
+function AddTodo (props) {
   return (
     <Paper style={{ margin: 16, padding: 16 }}>
       <Grid container>
@@ -21,7 +21,7 @@ function AddTodo(props) {
         </Grid>
       </Grid>
     </Paper>
-  );
+  )
 }
 
-export default AddTodo;
+export default AddTodo

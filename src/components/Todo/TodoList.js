@@ -1,8 +1,8 @@
-import { Paper, List } from "@material-ui/core";
-import React from 'react';
-import Todo from "./Todo";
+import { Paper, List } from '@material-ui/core'
+import React from 'react'
+import Todo from './Todo'
 
-function TodoList(props) {
+function TodoList (props) {
   return (
     <>
       {props.items.length > 0 && (
@@ -24,4 +24,4 @@ function TodoList(props) {
   )
 }
 
-export default TodoList;
+export default TodoList
